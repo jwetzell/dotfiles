@@ -20,3 +20,10 @@ if [ -f ~/.vimrc ]; then
     rm ~/.vimrc
 fi
 ln -s ~/dotfiles/.vimrc ~/.vimrc
+
+echo "linking .tmux.conf"
+if [ -f ~/.tmux.conf ]; then
+    echo ".tmux.conf exists removing"
+    rm ~/.tmux.conf
+fi
+ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
